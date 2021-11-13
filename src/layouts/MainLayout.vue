@@ -15,6 +15,12 @@
           </q-avatar> -->
           WEat
         </q-toolbar-title>
+
+
+        <q-btn to = "/order_history" flat round dense icon="history" />
+
+
+
       </q-toolbar>
     </q-header>
 
@@ -87,7 +93,7 @@
 
 
 
-      <q-list>
+      <!-- <q-list>
 
         <q-item
          to = "/order_history"
@@ -102,25 +108,63 @@
 
         <q-item-section>Order History</q-item-section>
         </q-item>
-      </q-list>  
+      </q-list>   -->
 
 
 
       <q-list>
 
         <q-item
-         to = "/about"
          clickable 
          v-ripple
           exact
-
+          @click="inception = true"
          >
+
         <q-item-section avatar>
           <q-icon  name="help" size="md" />
         </q-item-section>
 
         <q-item-section>About</q-item-section>
+
+          <div class="q-pa-md q-gutter-sm">
+           
+            <q-dialog v-model="inception">
+              <q-card>
+                <q-card-section>
+                  <div class="text-h6">About</div>
+                </q-card-section>
+
+                <q-card-section class="q-pt-none">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis laudantium minus earum totam modi laborum illo, corporis fuga saepe animi aliquam ea enim assumenda ut nulla natus aperiam quis. Iste.
+                </q-card-section>
+
+                <q-card-actions align="right" class="text-primary">
+                  <q-btn flat label="Click to find Founder" @click="secondDialog = true" />
+                  <q-btn flat label="Close" v-close-popup />
+                </q-card-actions>
+              </q-card>
+            </q-dialog>
+
+            <q-dialog v-model="secondDialog" persistent transition-show="scale" transition-hide="scale">
+              <q-card class="bg-teal text-white" style="width: 300px">
+                <q-card-section>
+                  <div class="text-h6">Persistent</div>
+                </q-card-section>
+
+                <q-card-section class="q-pt-none">
+                  Click/Tap on the backdrop.
+                </q-card-section>
+
+                <q-card-actions align="right" class="bg-white text-teal">
+                  <q-btn flat label="OK" v-close-popup />
+                </q-card-actions>
+              </q-card>
+            </q-dialog>
+          </div>
+
         </q-item>
+
       </q-list>      
 
 
@@ -185,7 +229,9 @@ export default {
       leftDrawerOpen,
       toggleLeftDrawer () {
         leftDrawerOpen.value = !leftDrawerOpen.value
-      }
+      },
+      inception: ref(false),
+      secondDialog: ref(false),
     }
   }
 }
