@@ -6,7 +6,7 @@
       style="width: 200px; height: 200px"
     > -->
 
-    Settings
+    FAQs
   </q-page>
 </template>
 
@@ -14,6 +14,6 @@
 import { defineComponent } from 'vue';
 
 export default defineComponent({
-  name: 'PageSettings'
+  name: 'PageFAQs'
 })
 </script>

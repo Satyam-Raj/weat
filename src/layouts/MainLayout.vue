@@ -1,7 +1,4 @@
 
-
-
-
 <template>
   <q-layout view="hHh lpr fFf">
 
@@ -173,17 +170,17 @@
       <q-list>
 
         <q-item
-         to = "/settings"
+         to = "/FAQs"
          clickable 
          v-ripple
           exact
 
          >
         <q-item-section avatar>
-          <q-icon  name="settings" size="md" />
+          <q-icon  name="lightbulb" size="md" />
         </q-item-section>
 
-        <q-item-section>Settings</q-item-section>
+        <q-item-section>FAQs</q-item-section>
         </q-item>
       </q-list>
 
@@ -216,7 +213,25 @@
     </q-page-container>
 
   </q-layout>
+
+
+
+
+
+
+
+ 
+
+
+
+
+
 </template>
+
+
+
+
+
 
 <script>
 import { ref } from 'vue'
@@ -235,4 +250,5 @@ export default {
     }
   }
 }
+
 </script>
