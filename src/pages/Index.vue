@@ -8,16 +8,13 @@
 
     <q-card class="my-card">
       <q-img src="https://cdn.quasar.dev/img/chicken-salad.jpg">
+
         <div class="absolute-bottom text-subtitle2 text-center">
           Yo Zing
         </div>
 
 
 
-
-
-
-        
         <div class="q-pa-md q-gutter-sm">
           <q-btn label="Menu" color="primary" @click="layout = true" />
 
@@ -80,7 +77,25 @@
                             30/-  
                           </q-item-section>
                           <q-item-section>
-                            incre
+                            
+                              <q-btn-toggle
+                                readonly
+                                v-model="model"
+                                toggle-color="primary"
+                                push
+                                dense
+                                glossy
+                                class="q-mr-sm"
+                                :options="[
+                                  {label: '-', value: 'one'},
+                                  {label: '9', value: 'two'},
+                                  {label: '+', value: 'three'}
+                                ]"
+                              />
+
+
+
+
                           </q-item-section>
                         </q-item>
                       </q-list>
@@ -96,7 +111,20 @@
                             35/-  
                           </q-item-section>
                           <q-item-section>
-                            incre
+                              <q-btn-toggle
+                                readonly
+                                v-model="model"
+                                toggle-color="primary"
+                                push
+                                dense
+                                glossy
+                                class="q-mr-sm"
+                                :options="[
+                                  {label: '-', value: 'one'},
+                                  {label: '3', value: 'two'},
+                                  {label: '+', value: 'three'}
+                                ]"
+                              />
                           </q-item-section>
                         </q-item>
                       </q-list>
@@ -317,7 +345,7 @@
                       <q-list dense bordered padding class="rounded-borders">
                         <q-item>
                           <q-item-section>
-                            Chocolate Frappe with Ice
+                            Regular Tea
                           </q-item-section>
                            <q-item-section>
                             
@@ -333,7 +361,57 @@
                       <q-list dense bordered padding class="rounded-borders">
                         <q-item>
                           <q-item-section>
-                            Regular Tea
+                            Ginger Tea
+                          </q-item-section>
+                           <q-item-section>
+                            
+                          </q-item-section>
+                          <q-item-section>
+                            25/-  
+                          </q-item-section>
+                          <q-item-section>
+                            incre
+                          </q-item-section>
+                        </q-item>
+                      </q-list>
+
+                      <q-list dense bordered padding class="rounded-borders">
+                        <q-item>
+                          <q-item-section>
+                            Masala Tea
+                          </q-item-section>
+                           <q-item-section>
+                            
+                          </q-item-section>
+                          <q-item-section>
+                            30/-  
+                          </q-item-section>
+                          <q-item-section>
+                            incre
+                          </q-item-section>
+                        </q-item>
+                      </q-list>
+                      <q-list dense bordered padding class="rounded-borders">
+                        <q-item>
+                          <q-item-section>
+                            Hot Lemon Tea
+                          </q-item-section>
+                           <q-item-section>
+                            
+                          </q-item-section>
+                          <q-item-section>
+                            25/-  
+                          </q-item-section>
+                          <q-item-section>
+                            incre
+                          </q-item-section>
+                        </q-item>
+                      </q-list>
+
+                      <q-list dense bordered padding class="rounded-borders">
+                        <q-item>
+                          <q-item-section>
+                            Black Tea with Ginger
                           </q-item-section>
                            <q-item-section>
                             
@@ -346,6 +424,24 @@
                           </q-item-section>
                         </q-item>
                       </q-list>
+                      <q-list dense bordered padding class="rounded-borders">
+                        <q-item>
+                          <q-item-section>
+                            Black Tea
+                          </q-item-section>
+                           <q-item-section>
+                            
+                          </q-item-section>
+                          <q-item-section>
+                            15/-  
+                          </q-item-section>
+                          <q-item-section>
+                            incre
+                          </q-item-section>
+                        </q-item>
+                      </q-list> 
+
+
                     </div>
 
 
@@ -363,7 +459,192 @@
                   icon="create_new_folder"
                   :done="step > 3"
                 >
-                  An ad group contains one or more ads which target a shared set of keywords.
+                    <div class="q-pa-sm item_width">
+                      <q-list dense bordered padding class="rounded-borders">
+                        <q-item>
+                          <q-item-section>
+                            Cold Frappe 
+                          </q-item-section>
+                           <q-item-section>
+                            
+                          </q-item-section>
+                          <q-item-section>
+                            80/-  
+                          </q-item-section>
+                          <q-item-section>
+                            incre
+                          </q-item-section>
+                        </q-item>
+                      </q-list>
+                      <q-list dense bordered padding class="rounded-borders">
+                        <q-item>
+                          <q-item-section>
+                            Tropical Frappe 
+                          </q-item-section>
+                           <q-item-section>
+                            
+                          </q-item-section>
+                          <q-item-section>
+                            85/-  
+                          </q-item-section>
+                          <q-item-section>
+                            incre
+                          </q-item-section>
+                        </q-item>
+                      </q-list>
+
+                      <q-list dense bordered padding class="rounded-borders">
+                        <q-item>
+                          <q-item-section>
+                            Chocolate Frappe
+                          </q-item-section>
+                           <q-item-section>
+                            
+                          </q-item-section>
+                          <q-item-section>
+                            90/-  
+                          </q-item-section>
+                          <q-item-section>
+                            incre
+                          </q-item-section>
+                        </q-item>
+                      </q-list>
+                      <q-list dense bordered padding class="rounded-borders">
+                        <q-item>
+                          <q-item-section>
+                            Chocolate Frappe with Ice
+                          </q-item-section>
+                           <q-item-section>
+                            
+                          </q-item-section>
+                          <q-item-section>
+                            100/-  
+                          </q-item-section>
+                          <q-item-section>
+                            incre
+                          </q-item-section>
+                        </q-item>
+                      </q-list>
+
+                      <q-list dense bordered padding class="rounded-borders">
+                        <q-item>
+                          <q-item-section>
+                            Cold Frappe with Ice
+                          </q-item-section>
+                           <q-item-section>
+                            
+                          </q-item-section>
+                          <q-item-section>
+                            105/-  
+                          </q-item-section>
+                          <q-item-section>
+                            incre
+                          </q-item-section>
+                        </q-item>
+                      </q-list>
+                      <q-list dense bordered padding class="rounded-borders">
+                        <q-item>
+                          <q-item-section>
+                            Mocha Blend Frappe
+                          </q-item-section>
+                           <q-item-section>
+                            
+                          </q-item-section>
+                          <q-item-section>
+                            95/-  
+                          </q-item-section>
+                          <q-item-section>
+                            incre
+                          </q-item-section>
+                        </q-item>
+                      </q-list> 
+
+
+                      <q-list dense bordered padding class="rounded-borders">
+                        <q-item>
+                          <q-item-section>
+                            Chocolate Brownie Frappe
+                          </q-item-section>
+                           <q-item-section>
+                            
+                          </q-item-section>
+                          <q-item-section>
+                            95/-  
+                          </q-item-section>
+                          <q-item-section>
+                            incre
+                          </q-item-section>
+                        </q-item>
+                      </q-list>
+                      <q-list dense bordered padding class="rounded-borders">
+                        <q-item>
+                          <q-item-section>
+                            Caramel Frappe 
+                          </q-item-section>
+                           <q-item-section>
+                            
+                          </q-item-section>
+                          <q-item-section>
+                            95/-  
+                          </q-item-section>
+                          <q-item-section>
+                            incre
+                          </q-item-section>
+                        </q-item>
+                      </q-list>
+
+                      <q-list dense bordered padding class="rounded-borders">
+                        <q-item>
+                          <q-item-section>
+                            Irish Coffee New
+                          </q-item-section>
+                           <q-item-section>
+                            
+                          </q-item-section>
+                          <q-item-section>
+                            95/-  
+                          </q-item-section>
+                          <q-item-section>
+                            incre
+                          </q-item-section>
+                        </q-item>
+                      </q-list>
+                      <q-list dense bordered padding class="rounded-borders">
+                        <q-item>
+                          <q-item-section>
+                            Crunch Cold Frappe
+                          </q-item-section>
+                           <q-item-section>
+                            
+                          </q-item-section>
+                          <q-item-section>
+                            95/-  
+                          </q-item-section>
+                          <q-item-section>
+                            incre
+                          </q-item-section>
+                        </q-item>
+                      </q-list>
+
+                      <q-list dense bordered padding class="rounded-borders">
+                        <q-item>
+                          <q-item-section>
+                            Chocochip Frappe
+                          </q-item-section>
+                           <q-item-section>
+                            
+                          </q-item-section>
+                          <q-item-section>
+                            95/-  
+                          </q-item-section>
+                          <q-item-section>
+                            incre
+                          </q-item-section>
+                        </q-item>
+                      </q-list>
+                       
+
+                    </div>
 
                   <q-stepper-navigation>
                     <q-btn @click="step = 4" color="primary" label="Continue" />
@@ -378,7 +659,109 @@
                   icon="create_new_folder"
                   :done="step > 4"
                 >
-                  An ad group contains one or more ads which target a shared set of keywords.
+                    <div class="q-pa-sm item_width">
+                      <q-list dense bordered padding class="rounded-borders">
+                        <q-item>
+                          <q-item-section>
+                            Classic Fresh Lime Soda 
+                          </q-item-section>
+                           <q-item-section>
+                            
+                          </q-item-section>
+                          <q-item-section>
+                            70/-  
+                          </q-item-section>
+                          <q-item-section>
+                            incre
+                          </q-item-section>
+                        </q-item>
+                      </q-list>
+                      <q-list dense bordered padding class="rounded-borders">
+                        <q-item>
+                          <q-item-section>
+                            Green Apple Soda
+                          </q-item-section>
+                           <q-item-section>
+                            
+                          </q-item-section>
+                          <q-item-section>
+                            80/-  
+                          </q-item-section>
+                          <q-item-section>
+                            incre
+                          </q-item-section>
+                        </q-item>
+                      </q-list>
+
+                      <q-list dense bordered padding class="rounded-borders">
+                        <q-item>
+                          <q-item-section>
+                            Cool Blue Lemon
+                          </q-item-section>
+                           <q-item-section>
+                            
+                          </q-item-section>
+                          <q-item-section>
+                            85/-  
+                          </q-item-section>
+                          <q-item-section>
+                            incre
+                          </q-item-section>
+                        </q-item>
+                      </q-list>
+                      <q-list dense bordered padding class="rounded-borders">
+                        <q-item>
+                          <q-item-section>
+                            Masala Lemonade
+                          </q-item-section>
+                           <q-item-section>
+                            
+                          </q-item-section>
+                          <q-item-section>
+                            80/-  
+                          </q-item-section>
+                          <q-item-section>
+                            incre
+                          </q-item-section>
+                        </q-item>
+                      </q-list>
+
+                      <q-list dense bordered padding class="rounded-borders">
+                        <q-item>
+                          <q-item-section>
+                            Water Melon Blush
+                          </q-item-section>
+                           <q-item-section>
+                            
+                          </q-item-section>
+                          <q-item-section>
+                            80/-  
+                          </q-item-section>
+                          <q-item-section>
+                            incre
+                          </q-item-section>
+                        </q-item>
+                      </q-list>
+                      <q-list dense bordered padding class="rounded-borders">
+                        <q-item>
+                          <q-item-section>
+                            Orange Mojito
+                          </q-item-section>
+                           <q-item-section>
+                            
+                          </q-item-section>
+                          <q-item-section>
+                            80/-  
+                          </q-item-section>
+                          <q-item-section>
+                            incre
+                          </q-item-section>
+                        </q-item>
+                      </q-list> 
+
+
+                    </div>
+
 
                   <q-stepper-navigation>
                     <q-btn @click="step = 5" color="primary" label="Continue" />
@@ -393,7 +776,59 @@
                   icon="create_new_folder"
                   :done="step > 5"
                 >
-                  An ad group contains one or more ads which target a shared set of keywords.
+                    <div class="q-pa-sm item_width">
+                      <q-list dense bordered padding class="rounded-borders">
+                        <q-item>
+                          <q-item-section>
+                            Lemon Ice Tea
+                          </q-item-section>
+                           <q-item-section>
+                            
+                          </q-item-section>
+                          <q-item-section>
+                            70/-  
+                          </q-item-section>
+                          <q-item-section>
+                            incre
+                          </q-item-section>
+                        </q-item>
+                      </q-list>
+                      <q-list dense bordered padding class="rounded-borders">
+                        <q-item>
+                          <q-item-section>
+                            Strawberry Ice Tea
+                          </q-item-section>
+                           <q-item-section>
+                            
+                          </q-item-section>
+                          <q-item-section>
+                            70/-  
+                          </q-item-section>
+                          <q-item-section>
+                            incre
+                          </q-item-section>
+                        </q-item>
+                      </q-list>
+
+                      <q-list dense bordered padding class="rounded-borders">
+                        <q-item>
+                          <q-item-section>
+                            Peach Ice Tea
+                          </q-item-section>
+                           <q-item-section>
+                            
+                          </q-item-section>
+                          <q-item-section>
+                            70/-  
+                          </q-item-section>
+                          <q-item-section>
+                            incre
+                          </q-item-section>
+                        </q-item>
+                      </q-list>
+                      
+
+                    </div>
 
                   <q-stepper-navigation>
                     <q-btn @click="step = 6" color="primary" label="Continue" />
@@ -408,7 +843,159 @@
                   icon="create_new_folder"
                   :done="step > 6"
                 >
-                  An ad group contains one or more ads which target a shared set of keywords.
+                    <div class="q-pa-sm item_width">
+                      <q-list dense bordered padding class="rounded-borders">
+                        <q-item>
+                          <q-item-section>
+                            Marvelous Mango
+                          </q-item-section>
+                           <q-item-section>
+                            
+                          </q-item-section>
+                          <q-item-section>
+                            105/-  
+                          </q-item-section>
+                          <q-item-section>
+                            incre
+                          </q-item-section>
+                        </q-item>
+                      </q-list>
+                      <q-list dense bordered padding class="rounded-borders">
+                        <q-item>
+                          <q-item-section>
+                            Crunchy Kiwi
+                          </q-item-section>
+                           <q-item-section>
+                            
+                          </q-item-section>
+                          <q-item-section>
+                            105/-  
+                          </q-item-section>
+                          <q-item-section>
+                            incre
+                          </q-item-section>
+                        </q-item>
+                      </q-list>
+
+                      <q-list dense bordered padding class="rounded-borders">
+                        <q-item>
+                          <q-item-section>
+                            Wild Berry
+                          </q-item-section>
+                           <q-item-section>
+                            
+                          </q-item-section>
+                          <q-item-section>
+                            90/-  
+                          </q-item-section>
+                          <q-item-section>
+                            incre
+                          </q-item-section>
+                        </q-item>
+                      </q-list>
+                      
+                      <q-list dense bordered padding class="rounded-borders">
+                        <q-item>
+                          <q-item-section>
+                            Butter Scotch
+                          </q-item-section>
+                           <q-item-section>
+                            
+                          </q-item-section>
+                          <q-item-section>
+                            105/-  
+                          </q-item-section>
+                          <q-item-section>
+                            incre
+                          </q-item-section>
+                        </q-item>
+                      </q-list>
+                      <q-list dense bordered padding class="rounded-borders">
+                        <q-item>
+                          <q-item-section>
+                            Black Current Shake
+                          </q-item-section>
+                           <q-item-section>
+                            
+                          </q-item-section>
+                          <q-item-section>
+                            85/-  
+                          </q-item-section>
+                          <q-item-section>
+                            incre
+                          </q-item-section>
+                        </q-item>
+                      </q-list>
+
+                      <q-list dense bordered padding class="rounded-borders">
+                        <q-item>
+                          <q-item-section>
+                            Smooth Strawberry
+                          </q-item-section>
+                           <q-item-section>
+                            
+                          </q-item-section>
+                          <q-item-section>
+                            75/-  
+                          </q-item-section>
+                          <q-item-section>
+                            incre
+                          </q-item-section>
+                        </q-item>
+                      </q-list>
+
+
+                      <q-list dense bordered padding class="rounded-borders">
+                        <q-item>
+                          <q-item-section>
+                            Badam Tandai 
+                          </q-item-section>
+                           <q-item-section>
+                            
+                          </q-item-section>
+                          <q-item-section>
+                            90/-  
+                          </q-item-section>
+                          <q-item-section>
+                            incre
+                          </q-item-section>
+                        </q-item>
+                      </q-list>
+                      <q-list dense bordered padding class="rounded-borders">
+                        <q-item>
+                          <q-item-section>
+                            Chocolate Brownie Shake
+                          </q-item-section>
+                           <q-item-section>
+                            
+                          </q-item-section>
+                          <q-item-section>
+                            105/-  
+                          </q-item-section>
+                          <q-item-section>
+                            incre
+                          </q-item-section>
+                        </q-item>
+                      </q-list>
+
+                      <q-list dense bordered padding class="rounded-borders">
+                        <q-item>
+                          <q-item-section>
+                            Green Apple Shake
+                          </q-item-section>
+                           <q-item-section>
+                            
+                          </q-item-section>
+                          <q-item-section>
+                            100/-  
+                          </q-item-section>
+                          <q-item-section>
+                            incre
+                          </q-item-section>
+                        </q-item>
+                      </q-list>
+
+                    </div>
 
                   <q-stepper-navigation>
                     <q-btn @click="step = 7" color="primary" label="Continue" />
@@ -781,24 +1368,17 @@ export default ({
             layout: ref(false),
 
             moreContent,
-            contentSize: computed(() => moreContent.value ? 10 : 5),
             drawer: ref(false),
             drawerR: ref(false),
             step: ref(1),
             count:  0,
+            model: ref('two'),
             
           }
   }
   },
 
-  methods: {
-    increment () {
-      this.count += 1
-    },
-    decrement () {
-      this.count -= 1
-    },
-  }
+
 })
 
 
